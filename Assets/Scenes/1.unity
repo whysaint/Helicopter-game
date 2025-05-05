@@ -334,6 +334,22 @@ CapsuleCollider:
   m_Height: 1.3200619
   m_Direction: 0
   m_Center: {x: -0.09080819, y: 0.14, z: -0.000000016237776}
+--- !u!114 &458280337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458280327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a71306ee6357f48ad3e9cb23e7594a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSound: {fileID: 2111771988}
+  minPitch: 0.7
+  maxPitch: 1.6
+  speedHelicopter: 15
 --- !u!1 &634180885
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +525,9 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 458280333}
     - targetCorrespondingSourceObject: {fileID: 7939075524489020225, guid: b788d51d82cdf18459ff7c5857438f0a, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 458280337}
+    - targetCorrespondingSourceObject: {fileID: 7939075524489020225, guid: b788d51d82cdf18459ff7c5857438f0a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 458280332}
     - targetCorrespondingSourceObject: {fileID: 7939075524489020225, guid: b788d51d82cdf18459ff7c5857438f0a, type: 3}
@@ -619,7 +638,7 @@ GameObject:
   - component: {fileID: 2111771988}
   m_Layer: 0
   m_Name: sound
-  m_TagString: Untagged
+  m_TagString: SoundHelicopnerNigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -632,7 +651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111771986}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
