@@ -179,7 +179,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 104
@@ -208,13 +208,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 29612660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324a462c50548634aaaf182b8f60b47f, type: 3}
+  m_Script: {fileID: 11500000, guid: 225d15d84350d0743ae4200282fae027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 2111771988}
-  minPitch: 0.7
+  audioHelicopter: {fileID: 2111771988}
+  minPitch: 0.8
   maxPitch: 1.8
-  helicopterSpeed: 15
+  speedHelicopter: 15
+  _animator: {fileID: 693453726}
 --- !u!1 &163635588
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +520,11 @@ Transform:
 --- !u!4 &693453725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7503205261449938672, guid: b788d51d82cdf18459ff7c5857438f0a, type: 3}
+  m_PrefabInstance: {fileID: 789974495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &693453726 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3973762922208040138, guid: b788d51d82cdf18459ff7c5857438f0a, type: 3}
   m_PrefabInstance: {fileID: 789974495}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &789974495
