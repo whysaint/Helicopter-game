@@ -21,9 +21,11 @@ public class HelicopterMover : MonoBehaviour
 
     void Stabilize()
     {
-        Vector3 curentUp = transform.up;
+        Vector3 currutUp = transform.up;
         Vector3 factUp = Vector3.up;
-        Vector3 GoStabilize = Vector3.Cross(curentUp, factUp);
-        _rb.AddTorque(GoStabilize * StabilityForce);
+        Vector3 finalUp = Vector3.Cross(currutUp, factUp);
+        _rb.AddTorque(finalUp * StabilityForce);
+        
     }
+
 }
