@@ -7,22 +7,23 @@ using UnityEngine;
 public class RamkaInWorld : MonoBehaviour
 {
     public Rigidbody _rb;
-    public float forceValue;
-    public Transform downWall;
-    public Transform upWall;
-    public Transform leftWall;
-    public Transform rightWall;
+    public float forceValue = 5f;
+    public Transform centreMap;
 
     private void Start()
     {
         _rb = FindObjectOfType<HelicopterMover>().GetComponent<Rigidbody>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("RAMKA"))
+        if (other.gameObject.CompareTag("RAMKA"))
         {
-            Debug.Log("Граница");
+            Vector3 pushDirection = (transform.position - other.ClosestPoint(transform.position));
+            
+            Debug.Log("Игрок задел границу! Отталкиваем в сторону: " + pushDirection);
+
+            _rb.velocity = pushDirection * forceValue;
         }
     }
 }
