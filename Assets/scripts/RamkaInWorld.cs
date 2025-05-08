@@ -1,23 +1,28 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RamkaInWorld : MonoBehaviour
 {
     public Rigidbody _rb;
     public float forceValue;
+    public Transform downWall;
+    public Transform upWall;
+    public Transform leftWall;
+    public Transform rightWall;
 
     private void Start()
     {
         _rb = FindObjectOfType<HelicopterMover>().GetComponent<Rigidbody>();
     }
 
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (_rb.position.y <= -5)
+        if (other.CompareTag("RAMKA"))
         {
-            _rb.AddForce(Vector3.up * forceValue);
+            Debug.Log("Граница");
         }
     }
 }
