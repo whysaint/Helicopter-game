@@ -8,7 +8,7 @@ public class CameraFolow : MonoBehaviour
     public Vector3 camera = new Vector3(0f, 1f, -10f);
     public float speed;
     
-    void Update()
+    void LateUpdate()
     {
         Vector3 FactOffset = target.position + camera;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, FactOffset, speed * Time.deltaTime);
