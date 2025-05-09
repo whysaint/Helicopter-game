@@ -1,19 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFolow : MonoBehaviour
+public class CameraFollowWithBounds : MonoBehaviour
 {
-    public Transform target;
-    public Vector3 camera = new Vector3(0f, 1f, -10f);
-    public float speed;
-    
+    public Transform target;                  // Игрок или цель
+    public Vector3 offset = new Vector3(0f, 1f, -10f);  // Смещение камеры
+    public float speed = 5f;                  // Скорость следования камеры
+
+    public Vector2 minBounds;                 // Минимальные границы (X, Y)
+    public Vector2 maxBounds;                 // Максимальные границы (X, Y)
+
+    private bool isFollowing = true;          // Следует ли камера за игроком
+
     void LateUpdate()
     {
-        Vector3 FactOffset = target.position + camera;
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, FactOffset, speed * Time.deltaTime);
+        // Проверка, находится ли игрок внутри границ
+        if (target.position.x > minBounds.x && target.position.x < maxBounds.x &&
+            target.position.y > minBounds.y && target.position.y < maxBounds.y)
+        {
+            isFollowing = true;
+        }
+        else
+        {
+            isFollowing = false;
+        }
 
-        transform.position = smoothedPosition;
-        transform.LookAt(target.position + Vector3.forward * 10f);
+        // Если игрок внутри границ — камера следует за ним
+        if (isFollowing)
+        {
+            Vector3 desiredPosition = target.position + offset;
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, speed * Time.deltaTime);
+            transform.position = smoothedPosition;
+
+            // Если хочешь, чтобы камера всегда смотрела на игрока
+            // transform.LookAt(target);
+        }
     }
 }
