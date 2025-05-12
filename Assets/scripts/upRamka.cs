@@ -16,6 +16,6 @@ public class upRamka : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        _rb.AddForce(Vector3.down * forceBackInMap);
+        _rb.AddForce(Vector3.down * forceBackInMap  * Time.deltaTime);
     }
 }
