@@ -28,7 +28,7 @@ public class CameraFolow : MonoBehaviour
         Vector3 LookAtTarget = target.position;
         if (LookAtTarget.y > maxWolrdGranzaY)
         {
-            LookAtTarget.y = transform.position.y;
+            LookAtTarget.y = target.position.y;
         }
 
         transform.LookAt(LookAtTarget + Vector3.forward * 10f);
