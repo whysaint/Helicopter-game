@@ -11,13 +11,14 @@ public class CameraFolow : MonoBehaviour
     public float cameraSpeed = 3f;
     
     public float maxWolrdGranzaY;
+    public float minWorldGranzaY;
     private bool isFolowing;
     
     void LateUpdate()
     {
         Vector3 derectivePosition = target.position + cameraPosition;
 
-        if (target.position.y > maxWolrdGranzaY)
+        if (target.position.y > maxWolrdGranzaY || target.position.y < minWorldGranzaY)
         {
             derectivePosition.y = transform.position.y;
         }

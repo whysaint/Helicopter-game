@@ -7,6 +7,7 @@ public class SoundHelicopter : MonoBehaviour
     public float maxPitch = 1.8f;
     public float speedHelicopter = 15f;
     public Animator _animator;
+    public Animator _tailAnumator;
     private Rigidbody _rb;
     
     void Start()
@@ -31,6 +32,7 @@ public class SoundHelicopter : MonoBehaviour
         float speed = _rb.velocity.magnitude;
         float speedProcent = Mathf.Clamp01(speed / speedHelicopter);
         float normolizedSpeedInProcent = Mathf.Lerp(0.50f, 2.0f, speedProcent);
-        _animator.SetFloat("SpinSpeed", normolizedSpeedInProcent );
+        _animator.SetFloat("SpinSpeed", normolizedSpeedInProcent);
+        _tailAnumator.SetFloat("Gavno", normolizedSpeedInProcent);
     }
 }
