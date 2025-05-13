@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 3406298105481689740}
   - component: {fileID: 9035751851641554047}
   - component: {fileID: 3541390927089134355}
+  - component: {fileID: 7668092641723960176}
   m_Layer: 0
   m_Name: HelicopterV2_TailRotor
   m_TagString: Untagged
@@ -131,13 +132,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7017754710467321635}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.49592757, y: 0.1997792, z: 0.02499428}
-  m_LocalScale: {x: 0.3, y: 0.29999995, z: 0.3}
+  m_LocalRotation: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
+  m_LocalPosition: {x: -0.49592823, y: 0.1997792, z: 0.024994247}
+  m_LocalScale: {x: 0.3, y: 0.29999995, z: 0.30000004}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7306689679130810875}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -90, z: -90}
 --- !u!33 &9035751851641554047
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -188,6 +189,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &7668092641723960176
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017754710467321635}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9eab8919a99780c4180386febe62867e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7939075524489020225
 GameObject:
   m_ObjectHideFlags: 0
