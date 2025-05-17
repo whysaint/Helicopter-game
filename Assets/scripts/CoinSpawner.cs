@@ -20,15 +20,7 @@ public class CoinSpawner : MonoBehaviour
             Vector2 spawnZone = new Vector2(Random.Range(minZonaX, maxZonaX), Random.Range(minZonaY, maxZonaY));
             Instantiate(coinPrefab, spawnZone, Quaternion.identity);
         }
-    }
 
-    private void Update()
-    {
-        /*Vector2 spawnZone = new Vector2(Random.Range(minZonaY, maxZonaY), Random.Range(minZonaX, maxZonaX));
-        
-        for (int i = 0; i < CoinValueSpawn; i++)
-        {
-            Instantiate(coinPrefab, spawnZone, Quaternion.identity);
-        }*/
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 }
