@@ -11,6 +11,7 @@ public class volumeSlider : MonoBehaviour
     {
         slider.onValueChanged.AddListener(ChangeValue);
         slider.value = 1f;
+        
     }
 
     void ChangeValue(float value)
