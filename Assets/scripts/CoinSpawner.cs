@@ -21,13 +21,20 @@ public class CoinSpawner : MonoBehaviour
         for (int i = 0; i < CoinCountValueSpawn; i++)
         {
             Vector2 spawnZone = new Vector2(Random.Range(minZonaX, maxZonaX), Random.Range(minZonaY, maxZonaY));
-            Instantiate(coinPrefab, spawnZone, Quaternion.identity);
+            if (!Physics.CheckSphere(spawnZone, 0.5f))
+            {
+                Instantiate(coinPrefab, spawnZone, Quaternion.identity);
+            }
         }
         
         for (int i = 0; i < BombCountValueSpawn; i++)
         {
+            
             Vector2 spawnZone = new Vector2(Random.Range(minZonaX, maxZonaX), Random.Range(minZonaY, maxZonaY));
-            Instantiate(bombPrefab, spawnZone, Quaternion.identity);
+            if (!Physics.CheckSphere(spawnZone, 0.5f))
+            {
+                Instantiate(bombPrefab, spawnZone, Quaternion.identity);
+            }
         }
 
         Screen.orientation = ScreenOrientation.LandscapeLeft;

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class volumeSlider : MonoBehaviour
 {
@@ -11,11 +12,16 @@ public class volumeSlider : MonoBehaviour
     {
         slider.onValueChanged.AddListener(ChangeValue);
         slider.value = 1f;
-        
+
     }
 
     void ChangeValue(float value)
     {
         AudioManader.Instance.SetVolume(value);
+    }
+    
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        EventSystem.current.SetSelectedGameObject(null);
     }
 }
