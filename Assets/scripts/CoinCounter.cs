@@ -1,13 +1,29 @@
-using System;
+    using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CoinCounter : MonoBehaviour
 {
     public int countCoin;
+    public TextMeshProUGUI coitText;
     public AudioSource coinSound;
-    public AudioSource bombSound;
+
+    void Start()
+    {
+        UpdateCoinText();
+    }
+
+    public void AddCoin(int amount)
+    {
+        countCoin += amount;
+    }
+
+    void UpdateCoinText()
+    {
+        coitText.text = "Coins: " + countCoin;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("COIN"))
@@ -15,10 +31,6 @@ public class CoinCounter : MonoBehaviour
             countCoin++;
             Destroy(other.gameObject);
             coinSound.Play();
-        }
-        if (other.gameObject.CompareTag("Bomb"))
-        {
-            bombSound.Play();
         }
     }
 }
