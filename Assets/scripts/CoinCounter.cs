@@ -7,10 +7,15 @@ using TMPro;
 public class CoinCounter : MonoBehaviour
 {
     public int countCoin;
+    public int maxCoinsInGame;
     public TextMeshProUGUI coitText;
     public AudioSource coinSound;
-
     void Start()
+    {
+        maxCoinsInGame = GameObject.FindGameObjectsWithTag("COIN").Length;
+    }
+
+    void Update()
     {
         UpdateCoinText();
     }
@@ -22,8 +27,9 @@ public class CoinCounter : MonoBehaviour
 
     void UpdateCoinText()
     {
-        coitText.text = "Coins: " + countCoin;
+        coitText.text = $"Coins: {countCoin}/{maxCoinsInGame}";
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("COIN"))
