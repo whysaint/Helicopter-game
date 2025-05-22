@@ -11,7 +11,11 @@ public class AudioManader : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         allAudioSource = FindObjectsOfType<AudioSource>();
+        
+        float savedVolume = PlayerPrefs.GetFloat("Volume", 1f);
+        SetVolume(savedVolume);
     }
 
     public void SetVolume(float volume)
@@ -20,5 +24,9 @@ public class AudioManader : MonoBehaviour
         {
             audio.volume = volume;
         }
+        
+        PlayerPrefs.SetFloat("Volume", volume);
+        PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
 }
