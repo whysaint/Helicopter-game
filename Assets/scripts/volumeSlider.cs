@@ -5,13 +5,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class volumeSlider : MonoBehaviour
+public class volumeSlider : MonoBehaviour, IPointerUpHandler
 {
     public Slider slider;
     private void Start()
     {
         slider.onValueChanged.AddListener(ChangeValue);
-        slider.value = 1f;
+        
+        float savedVolume = PlayerPrefs.GetFloat("Volume", 1f);
+        slider.value = savedVolume;
 
     }
 
