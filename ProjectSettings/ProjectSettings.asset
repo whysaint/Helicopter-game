@@ -162,6 +162,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.TarasPanchuk.HelicpterGame
     Standalone: com.Taras-Panchuk.Helicpter-Game
     iPhone: com.Taras-Panchuk.Helicpter-Game
   buildNumber:
