@@ -18,7 +18,7 @@ public class HelicopterBounce : MonoBehaviour
         {
             Vector3 firstContact = collision.contacts[0].point;
             Vector3 bounceDerection = (transform.position - firstContact).normalized;
-            _rb.velocity = bounceDerection * bounceForce;
+            _rb.linearVelocity = bounceDerection * bounceForce;
         }
 
     }
