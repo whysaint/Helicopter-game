@@ -10,6 +10,7 @@ public class CoinCounter : MonoBehaviour
     public int maxCoinsInGame;
     public TextMeshProUGUI coitText;
     public AudioSource coinSound;
+        
     void Start()
     {
         maxCoinsInGame = GameObject.FindGameObjectsWithTag("COIN").Length;

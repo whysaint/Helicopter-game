@@ -8,6 +8,10 @@ public class AudioManader : MonoBehaviour
     public static AudioManader Instance;
     public AudioSource[] allAudioSource;
 
+    public AudioSource audioSource;
+    
+    public AudioClip coinSound;
+
 
     private void Awake()
     {
@@ -27,6 +31,10 @@ public class AudioManader : MonoBehaviour
         
         PlayerPrefs.SetFloat("Volume", volume);
         PlayerPrefs.Save();
-        PlayerPrefs.Save();
+    }
+
+    public void PlaySound(Soundtype type)
+    {
+        audioSource.PlayOneShot(coinSound);
     }
 }
