@@ -14532,8 +14532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelSpawner
   coinPrefab: {fileID: 1088315657599040856, guid: 77a4d24ea170d434290e199830ece879, type: 3}
   bombPrefab: {fileID: 5227116841980999465, guid: db561fb8f65e80a4abea2560dc973792, type: 3}
-  minVectorBounse: {x: -47, y: 23, z: 0}
-  maxVertorBounse: {x: 47, y: -3, z: 0}
+  minVectorBounse: {x: -10, y: -10, z: 0}
+  maxVertorBounse: {x: 10, y: 10, z: 0}
   coinCount: 50
   bombCount: 20
   radius: 0.75
