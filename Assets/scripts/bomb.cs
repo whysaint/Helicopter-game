@@ -1,24 +1,27 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    public AudioSource bombSound;
-    public ParticleSystem explosionEffect;
+    [SerializeField] public ParticleSystem explosionEffect;
+    [SerializeField] public float bounceForce;
+    
     public float timer;
 
-    void OnCollisionEnter(Collision collision)
+
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Bomb"))
+        if (other.transform.root.CompareTag("Player"))
         {
-            ParticleSystem effect = Instantiate(explosionEffect, collision.transform.position, Quaternion.identity);
+            ParticleSystem effect = Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            
             effect.Play();
+            
             float totalDuration = effect.main.duration + effect.main.startLifetime.constantMax;
+            
             Destroy(effect.gameObject, totalDuration);
-            bombSound.Play();
-            Destroy(collision.gameObject);
+            
+            AudioManader.Instance.PlaySound(Soundtype.BombExplosion);
+            Destroy(gameObject);
         }
     }
 }

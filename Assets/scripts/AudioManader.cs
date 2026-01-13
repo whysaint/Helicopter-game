@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManader : MonoBehaviour
@@ -11,15 +8,20 @@ public class AudioManader : MonoBehaviour
     public AudioSource audioSource;
     
     public AudioClip coinSound;
+    public AudioClip bombSound;
 
 
     private void Awake()
     {
         Instance = this;
+
+        audioSource = GetComponent<AudioSource>();
         allAudioSource = FindObjectsOfType<AudioSource>();
         
         float savedVolume = PlayerPrefs.GetFloat("Volume", 1f);
         SetVolume(savedVolume);
+        
+        Debug.Log("Saved volume: " + savedVolume);
     }
 
     public void SetVolume(float volume)
@@ -35,6 +37,27 @@ public class AudioManader : MonoBehaviour
 
     public void PlaySound(Soundtype type)
     {
-        audioSource.PlayOneShot(coinSound);
+        
+        Debug.Log("PLAY SOUND: " + type);
+
+        
+        switch (type)
+        {
+            case Soundtype.Coin:
+                audioSource.PlayOneShot(coinSound);
+                break;
+            
+            case Soundtype.BombExplosion:
+                audioSource.PlayOneShot(bombSound);
+                break;
+            
+            case Soundtype.Win:
+                Debug.LogWarning("Sound not assigned");
+                break;
+            
+            case Soundtype.Lose:
+                Debug.LogWarning("Sound not assigned");
+                break;
+        }
     }
 }

@@ -1,6 +1,3 @@
-    using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -36,8 +33,8 @@ public class CoinCounter : MonoBehaviour
         if (other.gameObject.CompareTag("COIN"))
         {
             countCoin++;
-            Destroy(other.gameObject);
-            coinSound.Play();
+            //Destroy(other.gameObject);
+            //coinSound.Play();
         }
     }
 }
