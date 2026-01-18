@@ -26,6 +26,8 @@ public class HelicopterMover : MonoBehaviour
         _rb.AddRelativeForce(0f, vertical * SpeedMove, 0f);
         _rb.AddTorque(0f, 0f, -horizontal * SpeedRotate);
         Stabilize();
+        
+        AudioManader.Instance.SetHelicopterRotorPitch(GetMagnitude());
     }
 
     void Stabilize()
@@ -34,6 +36,13 @@ public class HelicopterMover : MonoBehaviour
         Vector3 factUp = Vector3.up;
         Vector3 finalUp = Vector3.Cross(currutUp, factUp);
         _rb.AddTorque(finalUp * StabilityForce);
+    }
+
+    public float GetMagnitude()
+    {
+        float speed = _rb.linearVelocity.magnitude;
+        float speedProcent = Mathf.Clamp01(speed / 15f);
+        return speedProcent;
     }
     
     public void SetVerticalInput(float value)

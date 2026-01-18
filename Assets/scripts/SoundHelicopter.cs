@@ -2,6 +2,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class SoundHelicopter : MonoBehaviour
 {
+    
+    
     public AudioSource audioHelicopter;
     public float minPitch = 0.8f;
     public float maxPitch = 1.8f;
@@ -13,11 +15,13 @@ public class SoundHelicopter : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
+
+        _animator = GetComponent<Animator>();
     }
     void Update()
     {
-        SoundPlay();
-        AnimationPlay();
+        //SoundPlay();
+        //AnimationPlay();
     }
 
     void SoundPlay()
