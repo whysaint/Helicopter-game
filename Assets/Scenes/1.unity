@@ -18390,65 +18390,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439274852}
   m_Mesh: {fileID: 4300000, guid: 72e65272e9752d842a914dd27fd86306, type: 3}
---- !u!1 &441852620 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6077705895775048013, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-  m_PrefabInstance: {fileID: 2145450721426483128}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &441852627 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2363486659835119029, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-  m_PrefabInstance: {fileID: 2145450721426483128}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441852620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b153b6587b6224ebdeba02b40a8b8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &441852631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441852620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 414bdf90c302d5f4298224f9a2c1a962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce: 20
---- !u!114 &441852634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441852620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0244f123029e0454a82f234075e3d838, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 920049670}
-  gameOwer: {fileID: 0}
-  damageSound: {fileID: 0}
---- !u!114 &441852637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441852620}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2127db3558eb7943957b9052429b593, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionEffect: {fileID: 1009934026}
 --- !u!1 &442705311
 GameObject:
   m_ObjectHideFlags: 0
@@ -23160,7 +23101,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 441852627}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
           m_MethodName: SetVerticalInput
           m_Mode: 4
@@ -23176,7 +23117,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 441852627}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
           m_MethodName: SetVerticalInput
           m_Mode: 4
@@ -23982,7 +23923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8760929607941571790, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       propertyPath: m_LocalScale.x
@@ -24045,8 +23986,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 846487872}
+    - targetCorrespondingSourceObject: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 846487877}
+    - targetCorrespondingSourceObject: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 846487871}
+    - targetCorrespondingSourceObject: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 846487873}
     - targetCorrespondingSourceObject: {fileID: 2662526422056665024, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1654836836}
@@ -33304,6 +33254,62 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &846487872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846487866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b153b6587b6224ebdeba02b40a8b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterMover
+  SpeedMove: 15
+  SpeedRotate: 2
+  StabilityForce: 5
+  _rb: {fileID: 0}
+--- !u!54 &846487873
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846487866}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 56
+  m_CollisionDetection: 0
+--- !u!114 &846487877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846487866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414bdf90c302d5f4298224f9a2c1a962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterBounce
+  bounceForce: 8
 --- !u!1 &847053437
 GameObject:
   m_ObjectHideFlags: 0
@@ -36782,7 +36788,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 441852627}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
           m_MethodName: SetHorizontalInput
           m_Mode: 4
@@ -36798,7 +36804,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 441852627}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
           m_MethodName: SetHorizontalInput
           m_Mode: 4
@@ -37418,7 +37424,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 441852627}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
           m_MethodName: SetHorizontalInput
           m_Mode: 4
@@ -37434,7 +37440,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 441852627}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
           m_MethodName: SetHorizontalInput
           m_Mode: 4
@@ -39483,11 +39489,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009002099}
   m_Mesh: {fileID: 4300000, guid: 2981aef5c43602144a67d458b6f0e750, type: 3}
---- !u!198 &1009934026 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198000012777718758, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
-  m_PrefabInstance: {fileID: 1511520025}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1009934028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010212820824, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
@@ -58946,7 +58947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2367a9f35e6fc7418aa8265fbc2732f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 29612661}
+  target: {fileID: 846487867}
   cameraPosition: {x: 0, y: 1, z: -12}
   cameraSpeed: 3
   maxWolrdGranzaY: 15
@@ -64892,6 +64893,62 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1643406984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643406974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b153b6587b6224ebdeba02b40a8b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterMover
+  SpeedMove: 20
+  SpeedRotate: 5
+  StabilityForce: 3.5
+  _rb: {fileID: 0}
+--- !u!114 &1643406985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643406974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414bdf90c302d5f4298224f9a2c1a962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterBounce
+  bounceForce: 15
+--- !u!54 &1643406986
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643406974}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 56
+  m_CollisionDetection: 0
 --- !u!1 &1644678793
 GameObject:
   m_ObjectHideFlags: 0
@@ -67450,7 +67507,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 441852627}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
           m_MethodName: SetVerticalInput
           m_Mode: 4
@@ -67466,7 +67523,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 441852627}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
           m_MethodName: SetVerticalInput
           m_Mode: 4
@@ -128620,6 +128677,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 917563192091923621, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+    - {fileID: 2363486659835119029, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+    - {fileID: 6685938065251075230, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+    - {fileID: 8021776518003197455, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8729059642380408776, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
     m_AddedGameObjects:
@@ -128627,18 +128687,18 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 846487867}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6077705895775048013, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 441852631}
-    - targetCorrespondingSourceObject: {fileID: 6077705895775048013, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 441852634}
-    - targetCorrespondingSourceObject: {fileID: 6077705895775048013, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 441852637}
+    - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1643406985}
+    - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1643406984}
     - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1643406979}
+    - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1643406986}
     - targetCorrespondingSourceObject: {fileID: 6167351818375620995, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1013434477}

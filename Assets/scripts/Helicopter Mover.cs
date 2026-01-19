@@ -5,7 +5,7 @@ public class HelicopterMover : MonoBehaviour
     public float SpeedMove;
     public float SpeedRotate;
     public float StabilityForce = 3.5f;
-    private Rigidbody _rb;
+    public Rigidbody _rb;
     
     private float _verticalInput = 0f;
     private float _horizontalInput = 0f;
