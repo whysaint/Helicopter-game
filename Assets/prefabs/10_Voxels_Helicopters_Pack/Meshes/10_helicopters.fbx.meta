@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 1e8c918a112de4194bfabcb24f8aeed6
+timeCreated: 1516796165
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: helicopter_10_body
+    100004: helicopter_10_propeller
+    100006: helicopter_10_weapon
+    100008: helicopter_1_body
+    100010: helicopter_1_propeller
+    100012: helicopter_1_weapon
+    100014: helicopter_2_body
+    100016: helicopter_2_propeller
+    100018: helicopter_2_weapon
+    100020: helicopter_3_body
+    100022: helicopter_3_propeller
+    100024: helicopter_3_weapon
+    100026: helicopter_4_body
+    100028: helicopter_4_propeller
+    100030: helicopter_4_weapon
+    100032: helicopter_5_body
+    100034: helicopter_5_propeller_left
+    100036: helicopter_5_propeller_right
+    100038: helicopter_5_propeller_upper
+    100040: helicopter_5_weapon
+    100042: helicopter_6_body
+    100044: helicopter_6_propeller_left
+    100046: helicopter_6_propeller_right
+    100048: helicopter_6_weapon
+    100050: helicopter_7_body
+    100052: helicopter_7_propeller
+    100054: helicopter_7_weapon
+    100056: helicopter_8_body
+    100058: helicopter_8_propeller
+    100060: helicopter_8_weapon
+    100062: helicopter_9_body
+    100064: helicopter_9_propeller_back
+    100066: helicopter_9_propeller_upper
+    100068: helicopter_9_weapon
+    400000: //RootNode
+    400002: helicopter_10_body
+    400004: helicopter_10_propeller
+    400006: helicopter_10_weapon
+    400008: helicopter_1_body
+    400010: helicopter_1_propeller
+    400012: helicopter_1_weapon
+    400014: helicopter_2_body
+    400016: helicopter_2_propeller
+    400018: helicopter_2_weapon
+    400020: helicopter_3_body
+    400022: helicopter_3_propeller
+    400024: helicopter_3_weapon
+    400026: helicopter_4_body
+    400028: helicopter_4_propeller
+    400030: helicopter_4_weapon
+    400032: helicopter_5_body
+    400034: helicopter_5_propeller_left
+    400036: helicopter_5_propeller_right
+    400038: helicopter_5_propeller_upper
+    400040: helicopter_5_weapon
+    400042: helicopter_6_body
+    400044: helicopter_6_propeller_left
+    400046: helicopter_6_propeller_right
+    400048: helicopter_6_weapon
+    400050: helicopter_7_body
+    400052: helicopter_7_propeller
+    400054: helicopter_7_weapon
+    400056: helicopter_8_body
+    400058: helicopter_8_propeller
+    400060: helicopter_8_weapon
+    400062: helicopter_9_body
+    400064: helicopter_9_propeller_back
+    400066: helicopter_9_propeller_upper
+    400068: helicopter_9_weapon
+    2100000: No Name
+    2300000: helicopter_10_body
+    2300002: helicopter_10_propeller
+    2300004: helicopter_10_weapon
+    2300006: helicopter_1_body
+    2300008: helicopter_1_propeller
+    2300010: helicopter_1_weapon
+    2300012: helicopter_2_body
+    2300014: helicopter_2_propeller
+    2300016: helicopter_2_weapon
+    2300018: helicopter_3_body
+    2300020: helicopter_3_propeller
+    2300022: helicopter_3_weapon
+    2300024: helicopter_4_body
+    2300026: helicopter_4_propeller
+    2300028: helicopter_4_weapon
+    2300030: helicopter_5_body
+    2300032: helicopter_5_propeller_left
+    2300034: helicopter_5_propeller_right
+    2300036: helicopter_5_propeller_upper
+    2300038: helicopter_5_weapon
+    2300040: helicopter_6_body
+    2300042: helicopter_6_propeller_left
+    2300044: helicopter_6_propeller_right
+    2300046: helicopter_6_weapon
+    2300048: helicopter_7_body
+    2300050: helicopter_7_propeller
+    2300052: helicopter_7_weapon
+    2300054: helicopter_8_body
+    2300056: helicopter_8_propeller
+    2300058: helicopter_8_weapon
+    2300060: helicopter_9_body
+    2300062: helicopter_9_propeller_back
+    2300064: helicopter_9_propeller_upper
+    2300066: helicopter_9_weapon
+    3300000: helicopter_10_body
+    3300002: helicopter_10_propeller
+    3300004: helicopter_10_weapon
+    3300006: helicopter_1_body
+    3300008: helicopter_1_propeller
+    3300010: helicopter_1_weapon
+    3300012: helicopter_2_body
+    3300014: helicopter_2_propeller
+    3300016: helicopter_2_weapon
+    3300018: helicopter_3_body
+    3300020: helicopter_3_propeller
+    3300022: helicopter_3_weapon
+    3300024: helicopter_4_body
+    3300026: helicopter_4_propeller
+    3300028: helicopter_4_weapon
+    3300030: helicopter_5_body
+    3300032: helicopter_5_propeller_left
+    3300034: helicopter_5_propeller_right
+    3300036: helicopter_5_propeller_upper
+    3300038: helicopter_5_weapon
+    3300040: helicopter_6_body
+    3300042: helicopter_6_propeller_left
+    3300044: helicopter_6_propeller_right
+    3300046: helicopter_6_weapon
+    3300048: helicopter_7_body
+    3300050: helicopter_7_propeller
+    3300052: helicopter_7_weapon
+    3300054: helicopter_8_body
+    3300056: helicopter_8_propeller
+    3300058: helicopter_8_weapon
+    3300060: helicopter_9_body
+    3300062: helicopter_9_propeller_back
+    3300064: helicopter_9_propeller_upper
+    3300066: helicopter_9_weapon
+    4300000: helicopter_10_body
+    4300002: helicopter_10_propeller
+    4300004: helicopter_10_weapon
+    4300006: helicopter_9_body
+    4300008: helicopter_9_propeller_upper
+    4300010: helicopter_9_propeller_back
+    4300012: helicopter_9_weapon
+    4300014: helicopter_8_body
+    4300016: helicopter_8_propeller
+    4300018: helicopter_8_weapon
+    4300020: helicopter_7_body
+    4300022: helicopter_7_propeller
+    4300024: helicopter_7_weapon
+    4300026: helicopter_6_body
+    4300028: helicopter_6_propeller_right
+    4300030: helicopter_6_propeller_left
+    4300032: helicopter_6_weapon
+    4300034: helicopter_5_body
+    4300036: helicopter_5_propeller_upper
+    4300038: helicopter_5_propeller_right
+    4300040: helicopter_5_propeller_left
+    4300042: helicopter_5_weapon
+    4300044: helicopter_4_body
+    4300046: helicopter_4_propeller
+    4300048: helicopter_4_weapon
+    4300050: helicopter_3_body
+    4300052: helicopter_3_propeller
+    4300054: helicopter_3_weapon
+    4300056: helicopter_2_body
+    4300058: helicopter_2_propeller
+    4300060: helicopter_2_weapon
+    4300062: helicopter_1_body
+    4300064: helicopter_1_propeller
+    4300066: helicopter_1_weapon
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109976
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/10_Voxels_Helicopters_Pack/Meshes/10_helicopters.fbx
+  uploadId: 225664

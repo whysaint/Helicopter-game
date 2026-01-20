@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 39040597da86a424d84643d2c0b62f52
+timeCreated: 1516796539
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109976
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/10_Voxels_Helicopters_Pack/Animations/helicopter_propeller_ctrl.controller
+  uploadId: 225664

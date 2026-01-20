@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f45b43b8ba2374a4eb403561c5f4ca9c
+timeCreated: 1516796446
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109976
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/10_Voxels_Helicopters_Pack/Materials/Mobile_Helicopters_Mat.mat
+  uploadId: 225664

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ec8526536797f42e9a1ba26c69add80b
+timeCreated: 1516799465
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109976
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/10_Voxels_Helicopters_Pack/Prefabs/helicopter_8_body.prefab
+  uploadId: 225664

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a19237d69a0414fb5a48484da3110651
+timeCreated: 1516799454
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109976
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/10_Voxels_Helicopters_Pack/Prefabs/helicopter_4_body.prefab
+  uploadId: 225664
