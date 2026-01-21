@@ -14,7 +14,7 @@ public class CameraFolow : MonoBehaviour
     public float minWorldGranzaY;
     private bool isFolowing;
 
-    private List<Transform> AllHelicopters = new List<Transform>();
+    public List<Transform> AllHelicopters = new List<Transform>();
 
     private void Start()
     {
