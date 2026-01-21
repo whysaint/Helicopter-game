@@ -12,6 +12,7 @@ PerfReports/
 
 # === IDE ===
 .vs/
+.utmp
 .vscode/
 .idea/
 *.csproj
