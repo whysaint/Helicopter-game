@@ -2017,7 +2017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 96245143}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ReplayUI, Assembly-CSharp
         m_MethodName: ReplayScene
         m_Mode: 1
@@ -4774,8 +4774,6 @@ GameObject:
   - component: {fileID: 96245141}
   - component: {fileID: 96245140}
   - component: {fileID: 96245139}
-  - component: {fileID: 96245142}
-  - component: {fileID: 96245143}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4833,30 +4831,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &96245142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96245138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7581fcdcd8b0043419b981e2e95a51c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &96245143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96245138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5edbe336a246ad40bbd27dc90fd26d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &96939110
 GameObject:
   m_ObjectHideFlags: 0
@@ -23101,10 +23075,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
-          m_MethodName: SetVerticalInput
-          m_Mode: 4
+        - m_Target: {fileID: 715865027}
+          m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+          m_MethodName: VerticalPlus
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -27134,6 +27108,23 @@ Transform:
   - {fileID: 1651302083}
   m_Father: {fileID: 231087165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &715865026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6077705895775048013, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+  m_PrefabInstance: {fileID: 2145450721426483128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &715865027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715865026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ee947d7eb800e49883ffa9b67a9925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInputController
 --- !u!1 &715879133
 GameObject:
   m_ObjectHideFlags: 0
@@ -36788,9 +36779,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1561922405}
           m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
-          m_MethodName: SetHorizontalInput
+          m_MethodName: 
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -36859,7 +36850,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 949287021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 715865026}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &949287021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60357,7 +60360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1561922406
 Transform:
   m_ObjectHideFlags: 0
@@ -65024,9 +65027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b153b6587b6224ebdeba02b40a8b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterMover
-  SpeedMove: 20
-  SpeedRotate: 5
-  StabilityForce: 3.5
+  SpeedMove: 12
+  SpeedRotate: 2
+  StabilityForce: 5
   _rb: {fileID: 0}
 --- !u!114 &1643406985
 MonoBehaviour:
@@ -65040,7 +65043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414bdf90c302d5f4298224f9a2c1a962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterBounce
-  bounceForce: 15
+  bounceForce: 100
 --- !u!54 &1643406986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128783,7 +128786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 788709578052759343, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -128883,9 +128886,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 917563192091923621, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-    - {fileID: 2363486659835119029, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
     - {fileID: 6685938065251075230, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
     - {fileID: 8021776518003197455, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+    - {fileID: 2363486659835119029, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8729059642380408776, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
     m_AddedGameObjects:
@@ -128896,6 +128899,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1561922406}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6077705895775048013, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 715865027}
     - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1643406985}

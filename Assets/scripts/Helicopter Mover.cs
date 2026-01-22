@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HelicopterMover : MonoBehaviour
+public class HelicopterMover : MonoBehaviour, IHelicopterInput
 {
     public float SpeedMove;
     public float SpeedRotate;
@@ -45,12 +45,12 @@ public class HelicopterMover : MonoBehaviour
         return speedProcent;
     }
     
-    public void SetVerticalInput(float value)
+    public void VerticalInput(float value)
     {
         _verticalInput = value;
     }
 
-    public void SetHorizontalInput(float value)
+    public void HorizontalInput(float value)
     {
         _horizontalInput = value;
     }
