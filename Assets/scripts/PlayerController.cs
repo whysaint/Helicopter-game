@@ -1,8 +1,15 @@
+using System;
 using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
     private IHelicopterInput currentHelicopter;
+
+    private void Start()
+    {
+        HelicopterMover heli = FindObjectOfType<HelicopterMover>();
+        SetActiveHelicopter(heli);
+    }
 
     public void SetActiveHelicopter(IHelicopterInput helicopter)
     {
