@@ -23897,7 +23897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8760929607941571790, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       propertyPath: m_LocalScale.x
@@ -36779,10 +36779,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1561922405}
-          m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
-          m_MethodName: 
-          m_Mode: 4
+        - m_Target: {fileID: 715865027}
+          m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+          m_MethodName: HorizontalPlus
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -36795,10 +36795,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
-          m_MethodName: SetHorizontalInput
-          m_Mode: 4
+        - m_Target: {fileID: 715865027}
+          m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+          m_MethodName: ResetHorizontal
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -36850,19 +36850,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 949287021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 715865026}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &949287021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37427,10 +37415,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
-          m_MethodName: SetHorizontalInput
-          m_Mode: 4
+        - m_Target: {fileID: 715865027}
+          m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+          m_MethodName: HorizontalMinus
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -37443,10 +37431,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
-          m_MethodName: SetHorizontalInput
-          m_Mode: 4
+        - m_Target: {fileID: 715865027}
+          m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+          m_MethodName: ResetHorizontal
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -60354,6 +60342,7 @@ GameObject:
   - component: {fileID: 1561922409}
   - component: {fileID: 1561922407}
   - component: {fileID: 1561922411}
+  - component: {fileID: 1561922412}
   m_Layer: 0
   m_Name: 'helicopter '
   m_TagString: Untagged
@@ -60456,6 +60445,103 @@ CapsuleCollider:
   m_Height: 3.4
   m_Direction: 0
   m_Center: {x: 0.06, y: -0.32, z: 0}
+--- !u!82 &1561922412
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561922405}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: dccf8934c283bf047987e1f58e5fe5da, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1566116018
 GameObject:
   m_ObjectHideFlags: 0
@@ -64918,103 +65004,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
   m_PrefabInstance: {fileID: 2145450721426483128}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1643406979
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643406974}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: dccf8934c283bf047987e1f58e5fe5da, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1643406984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65043,7 +65032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414bdf90c302d5f4298224f9a2c1a962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterBounce
-  bounceForce: 100
+  bounceForce: 15
 --- !u!54 &1643406986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -67634,10 +67623,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
-          m_MethodName: SetVerticalInput
-          m_Mode: 4
+        - m_Target: {fileID: 715865027}
+          m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+          m_MethodName: VerticalMinus
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -67650,10 +67639,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: HelicopterMover, Assembly-CSharp
-          m_MethodName: SetVerticalInput
-          m_Mode: 4
+        - m_Target: {fileID: 715865027}
+          m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+          m_MethodName: ResetVertical
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -128786,7 +128775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 788709578052759343, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -128851,7 +128840,7 @@ PrefabInstance:
     - target: {fileID: 5905621191258180383, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b2263ea4830e7d04dac3a470683e30f5, type: 2}
+      objectReference: {fileID: 9100000, guid: 39040597da86a424d84643d2c0b62f52, type: 2}
     - target: {fileID: 6077705895775048013, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -128904,13 +128893,10 @@ PrefabInstance:
       addedObject: {fileID: 715865027}
     - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       insertIndex: 1
-      addedObject: {fileID: 1643406985}
-    - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-      insertIndex: 2
       addedObject: {fileID: 1643406984}
     - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1643406979}
+      insertIndex: 2
+      addedObject: {fileID: 1643406985}
     - targetCorrespondingSourceObject: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1643406986}

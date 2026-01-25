@@ -66,7 +66,8 @@ public class AudioManader : MonoBehaviour
     {
         helicopterRotor.pitch = Mathf.Lerp(0.8f, 1.8f, normalizedSpeed);
 
-        if (!helicopterRotor.isPlaying)
-            helicopterRotor.Play();
+        Debug.Log("SetHelicopterRotorPitch");
+ 
+        if (!helicopterRotor.isPlaying) helicopterRotor.Play();
     }
 }
