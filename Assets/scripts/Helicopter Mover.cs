@@ -27,8 +27,6 @@ public class HelicopterMover : MonoBehaviour, IHelicopterInput
         _rb.AddRelativeForce(0f, vertical * speedMove, 0f);
         _rb.AddTorque(0f, 0f, -horizontal * speedRotate);
         Stabilize();
-        
-        AudioManader.Instance.SetHelicopterRotorPitch(GetMagnitude());
     }
 
     void Stabilize()
