@@ -1,20 +1,19 @@
-using System;
 using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
-    private IHelicopterInput currentHelicopter;
+    private IHelicopterInput _currentHelicopter;
 
     private void Start()
     {
-        HelicopterMover heli = FindObjectOfType<HelicopterMover>();
+        HelicopterMover heli = FindAnyObjectByType<HelicopterMover>();
         SetActiveHelicopter(heli);
     }
     private void Update()
     {
-        if (currentHelicopter == null) return;
+        if (_currentHelicopter == null) return;
 
-        if (currentHelicopter is HelicopterMover heli)
+        if (_currentHelicopter is HelicopterMover heli)
         {
             AudioManader.Instance.SetHelicopterRotorPitch(heli.GetMagnitude());
         }
@@ -22,7 +21,7 @@ public class PlayerInputController : MonoBehaviour
     
     public void SetActiveHelicopter(IHelicopterInput helicopter)
     {
-        currentHelicopter = helicopter;
+        _currentHelicopter = helicopter;
         if (helicopter == null)
         {
             Debug.Log("shit code");
@@ -32,31 +31,31 @@ public class PlayerInputController : MonoBehaviour
     public void VerticalPlus()
     {
         Debug.Log("VerticalPlus called");
-        currentHelicopter?.VerticalInput(1f); //up
+        _currentHelicopter?.VerticalInput(1f); //up
     }
     
     public void VerticalMinus()
     {
-        currentHelicopter?.VerticalInput(-1f); //down
+        _currentHelicopter?.VerticalInput(-1f); //down
     }
 
     public void ResetVertical()
     {
-        currentHelicopter?.ResetVerticalInput();
+        _currentHelicopter?.ResetVerticalInput();
     }
 
     public void HorizontalPlus()
     {
-        currentHelicopter?.HorizontalInput(1f); //left
+        _currentHelicopter?.HorizontalInput(1f); //left
     }
 
     public void HorizontalMinus()
     {
-        currentHelicopter?.HorizontalInput(-1f);// right 
+        _currentHelicopter?.HorizontalInput(-1f);// right 
     }
 
     public void ResetHorizontal()
     {
-        currentHelicopter?.ResetHorizontalInput();
+        _currentHelicopter?.ResetHorizontalInput();
     }
 }

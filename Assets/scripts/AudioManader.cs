@@ -62,12 +62,14 @@ public class AudioManader : MonoBehaviour
         }
     }
     
-    public void SetHelicopterRotorPitch(float normalizedSpeed)
+    public void SetHelicopterRotorPitch(float pitch)
     {
-        helicopterRotor.pitch = Mathf.Lerp(0.8f, 1.8f, normalizedSpeed);
+        helicopterRotor.pitch = Mathf.Lerp(0.85f, 1.5f, pitch);
 
         Debug.Log("SetHelicopterRotorPitch");
  
         if (!helicopterRotor.isPlaying) helicopterRotor.Play();
+        
+        Debug.Log($"AudioManager.SetHelicopterRotorPitch called, pitch={pitch}");
     }
 }
