@@ -9,16 +9,7 @@ public class PlayerInputController : MonoBehaviour
         HelicopterMover heli = FindAnyObjectByType<HelicopterMover>();
         SetActiveHelicopter(heli);
     }
-    private void Update()
-    {
-        if (_currentHelicopter == null) return;
 
-        if (_currentHelicopter is HelicopterMover heli)
-        {
-            AudioManader.Instance.SetHelicopterRotorPitch(heli.GetMagnitude());
-        }
-    }
-    
     public void SetActiveHelicopter(IHelicopterInput helicopter)
     {
         _currentHelicopter = helicopter;

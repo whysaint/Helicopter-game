@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManader : MonoBehaviour
@@ -10,7 +9,6 @@ public class AudioManader : MonoBehaviour
     
     public AudioClip coinSound;
     public AudioClip bombSound;
-    public AudioSource helicopterRotor; 
     
     private void Awake()
     {
@@ -60,16 +58,5 @@ public class AudioManader : MonoBehaviour
                 Debug.LogWarning("Sound not assigned");
                 break;
         }
-    }
-    
-    public void SetHelicopterRotorPitch(float pitch)
-    {
-        helicopterRotor.pitch = Mathf.Lerp(0.85f, 1.5f, pitch);
-
-        Debug.Log("SetHelicopterRotorPitch");
- 
-        if (!helicopterRotor.isPlaying) helicopterRotor.Play();
-        
-        Debug.Log($"AudioManager.SetHelicopterRotorPitch called, pitch={pitch}");
     }
 }
