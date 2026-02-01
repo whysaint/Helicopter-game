@@ -14308,7 +14308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ef48f52cca7b54988288a6bcecee73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelSpawner
-  coinPrefab: {fileID: 4532178055155097991, guid: 671547dcdff28874691e580fbd0bf4a1, type: 3}
+  coinPrefab: {fileID: 1712037013081740007, guid: c708e70a04afc564090176219a47d7ee, type: 3}
   bombPrefab: {fileID: 5227116841980999465, guid: db561fb8f65e80a4abea2560dc973792, type: 3}
   minVectorBounse: {x: -47, y: 23, z: 0}
   maxVertorBounse: {x: 47, y: -3, z: 0}
@@ -23624,6 +23624,9 @@ PrefabInstance:
       addedObject: {fileID: 846487881}
     - targetCorrespondingSourceObject: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       insertIndex: 4
+      addedObject: {fileID: 846487886}
+    - targetCorrespondingSourceObject: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
+      insertIndex: 5
       addedObject: {fileID: 846487882}
     - targetCorrespondingSourceObject: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       insertIndex: -1
@@ -32788,7 +32791,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 56
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &846487877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32915,6 +32918,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &846487886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846487866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9fdb4b353036348ae14304ba035ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterAnimationRator
+  rotorAnimator: {fileID: 1654836835}
+  speedParameterName: speed
+  minSpeed: 0.5
+  maxSpeed: 10
 --- !u!1 &847053437
 GameObject:
   m_ObjectHideFlags: 0

@@ -3865,10 +3865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2127db3558eb7943957b9052429b593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bomb
-  explosionEffect: {fileID: 198000012777718758, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
-  bounceForce: 147.6
-  rb: {fileID: 0}
-  timer: 2
+  explosionEffect: {fileID: 198168632713017960, guid: 95175aeab20f4d041860eca89a4ddded, type: 3}
 --- !u!1 &6390219548511996199
 GameObject:
   m_ObjectHideFlags: 0
