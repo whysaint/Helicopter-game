@@ -9,8 +9,11 @@ public class Bomb : MonoBehaviour
         if (other.transform.root.CompareTag("Player"))
         {
             ParticleSystem effect = Instantiate(explosionEffect, transform.position, Quaternion.identity);
-            effect.Play();
-            
+
+            if (effect != null)
+            {
+                effect.Play();
+            }
             Destroy(effect.gameObject, effect.main.duration);
             
             AudioManader.Instance.PlaySound(Soundtype.BombExplosion);

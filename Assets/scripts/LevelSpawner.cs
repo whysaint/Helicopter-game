@@ -43,7 +43,7 @@ public class LevelSpawner : MonoBehaviour
 
             if (!Physics.CheckSphere(pos, radius))
             {
-                Instantiate(prefab, pos, Quaternion.identity);
+                Instantiate(prefab, pos, Quaternion.Euler(0, Random.Range(0f, 360f), 0));
                 spawned++;
             }
         }

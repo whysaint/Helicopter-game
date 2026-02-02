@@ -4,9 +4,8 @@ using UnityEngine;
 public class HelicopterAnimationRator : MonoBehaviour
 {
     [SerializeField] private Animator rotorAnimator;
-    [SerializeField] private string speedParameterName = "speed";
     [SerializeField] private float minSpeed = 0.5f; 
-    [SerializeField] private float maxSpeed = 10f;
+    [SerializeField] private float maxSpeed = 3f;
     
     private HelicopterMover _helicopterMover;
 
@@ -25,8 +24,10 @@ public class HelicopterAnimationRator : MonoBehaviour
         if (rotorAnimator == null || _helicopterMover == null) return;
         
         float magnitude = _helicopterMover.GetMagnitude();
-        float animSpeed = Mathf.Lerp(minSpeed, maxSpeed, magnitude);
+        float animSpeed = Mathf.Lerp(minSpeed, maxSpeed, Mathf.Clamp01(magnitude));
         
-        rotorAnimator.SetFloat(speedParameterName, animSpeed);
+        Debug.Log(animSpeed);
+        
+        rotorAnimator.SetFloat("speed", animSpeed);
     }
 }
