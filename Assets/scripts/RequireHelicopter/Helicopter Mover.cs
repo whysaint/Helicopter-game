@@ -1,15 +1,11 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class HelicopterMover : MonoBehaviour, IHelicopterInput
+public class HelicopterMover : MonoBehaviour
 {
-    public float speedMove;
-    public float speedRotate;
+    public float speedMove = 10f;
+    public float speedRotate = 5f;
     public float stabilityForce = 3.5f;
     public Rigidbody _rb;
-    
-    private float _verticalInput = 0f;
-    private float _horizontalInput = 0f;
 
     private void Start()
     {
@@ -18,12 +14,9 @@ public class HelicopterMover : MonoBehaviour, IHelicopterInput
 
     void FixedUpdate()
     {
-        float vertical = Input.GetAxis("Vertical") + _verticalInput;
-        float horizontal = Input.GetAxis("Horizontal") + _horizontalInput;
-
-        vertical = Mathf.Clamp(vertical, -1f, 1f);
-        horizontal = Mathf.Clamp(horizontal, -1f, 1f);
-
+        float vertical = InputManager.Instance.Vertical;
+        float horizontal = InputManager.Instance.Horizontal;
+        
         _rb.AddRelativeForce(0f, vertical * speedMove, 0f);
         _rb.AddTorque(0f, 0f, -horizontal * speedRotate);
         Stabilize();
@@ -40,28 +33,6 @@ public class HelicopterMover : MonoBehaviour, IHelicopterInput
     public float GetMagnitude()
     {
         float speed = _rb.linearVelocity.magnitude;
-        float speedProcent = Mathf.Clamp01(speed / 15f);
-        return speedProcent;
+        return Mathf.Clamp01(speed / 15f);
     }
-    
-    public void VerticalInput(float value)
-    {
-        _verticalInput = value;
-    }
-
-    public void HorizontalInput(float value)
-    {
-        _horizontalInput = value;
-    }
-
-    public void ResetVerticalInput()
-    {
-        _verticalInput = 0f;
-    }
-
-    public void ResetHorizontalInput()
-    {
-        _horizontalInput = 0f;
-    }
-
 }

@@ -23211,7 +23211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8277268270088658548, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8417442085250704511, guid: 16ac732b58c8753419a01038b1642b0d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32266,8 +32266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b153b6587b6224ebdeba02b40a8b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterMover
-  speedMove: 13
-  speedRotate: 2
+  speedMove: 16
+  speedRotate: 1.5
   stabilityForce: 4.04
   _rb: {fileID: 0}
 --- !u!54 &846487873
@@ -32296,7 +32296,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 56
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &846487877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32437,7 +32437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterAnimationRator
   rotorAnimator: {fileID: 1654836835}
   minSpeed: 0.5
-  maxSpeed: 10
+  maxSpeed: 3
 --- !u!1 &847053437
 GameObject:
   m_ObjectHideFlags: 0
@@ -62844,7 +62844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterMover
   speedMove: 15
-  speedRotate: 4
+  speedRotate: 1.5
   stabilityForce: 6
   _rb: {fileID: 0}
 --- !u!114 &1643406985
@@ -74805,6 +74805,50 @@ Transform:
   m_Children:
   - {fileID: 1484748500}
   m_Father: {fileID: 231087165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1975311536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1975311538}
+  - component: {fileID: 1975311537}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1975311537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975311536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf544eb20d36ab4da2b9ce50a66cb81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputManager
+--- !u!4 &1975311538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975311536}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.65951, y: -2.8087, z: 12.83814}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1981754056
 GameObject:
@@ -125816,7 +125860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 788709578052759343, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -127812,3 +127856,4 @@ SceneRoots:
   - {fileID: 1424628785}
   - {fileID: 339608806}
   - {fileID: 1748900912}
+  - {fileID: 1975311538}
