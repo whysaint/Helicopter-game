@@ -1,0 +1,1504 @@
+fileFormatVersion: 2
+guid: 53de56a0fdfd077449218c7d14c86fd2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1572
+        width: 916
+        height: 300
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 149, y: 86, z: 119, w: 62}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8311ebcc57e734fb27854c17e0d3cf
+      internalID: 1684622673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_1
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1866
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b41b2d0219c454d8208ff42da52b60
+      internalID: -545260064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_2
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1578
+        width: 805
+        height: 300
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 100, y: 91, z: 107, w: 57}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4347cce7b3b3d49a0002fe6a29f1c7
+      internalID: -584030055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1302
+        width: 222
+        height: 228
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6649178d641374fafa73747eb6878c
+      internalID: -177017149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_4
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1303
+        width: 222
+        height: 227
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f4848a80b5fff49966bc10e0236b22
+      internalID: 576592472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_5
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1303
+        width: 222
+        height: 227
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0018fd9c7925e44db3e57acf407b1c7
+      internalID: 2114656819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_6
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1530
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c656df1722b03df40894b92283d631d0
+      internalID: 1231357110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_7
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1303
+        width: 221
+        height: 227
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c14babb70938c746a34397cf235bc30
+      internalID: -995283304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_8
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1302
+        width: 222
+        height: 228
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34953194bfc0e4a4baa06cd3a3ffae1e
+      internalID: -794673503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_9
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1303
+        width: 221
+        height: 227
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a58f47aa8cc4146bac4d4a68301fa0
+      internalID: 1666879496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_10
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 1303
+        width: 220
+        height: 227
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686470f4ef238e7438bc38b97b54365b
+      internalID: -1931041952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_11
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1296
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cc904f46c4cba40acc67ce57cb8d56
+      internalID: -1335553709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1296
+        width: 12
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731dccccb8ab0654cbaab0d03930f253
+      internalID: -1837171489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_13
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1296
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b9beeb151b7ef42b1f26c8378ba1f5
+      internalID: 6904366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_14
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1296
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a871f6a737e056a4caccb49b60723cd9
+      internalID: -711089701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_15
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1260
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e562a68e10215449866327630f3dcf5
+      internalID: 2017356428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_16
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1254
+        width: 12
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedfbb1d8cb548549930f2daaa978afe
+      internalID: 1911675187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_17
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1013
+        width: 232
+        height: 235
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167016211806b4b4594f16823d7160a6
+      internalID: 1427234566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_18
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1018
+        width: 232
+        height: 230
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c24a4af1bb1c41409409e7c033e80e8
+      internalID: 813561283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1018
+        width: 233
+        height: 230
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ec0184d15311b498dafface9865262
+      internalID: -408024569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_20
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1018
+        width: 232
+        height: 230
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39df1864320850e4ba44125d64d7a6bd
+      internalID: -1766096539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_21
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1018
+        width: 237
+        height: 230
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece74cbdf55d0934ea7c04f19c7e6e65
+      internalID: 734626998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_22
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 1018
+        width: 233
+        height: 230
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b94f82e07d32a945ab09a8c899da89d
+      internalID: -238052476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_23
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1018
+        width: 237
+        height: 230
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fbaa696754cde40964839fa41e60b5
+      internalID: -71082734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_24
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1212
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3b70f244be2de4685ecfcd56898f0c
+      internalID: -1151543733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_25
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 1056
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795fe77426f722748be78c1d1cb9cc6f
+      internalID: 971784808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_26
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1038
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bad10d1a7bfd484493283d9e8592334
+      internalID: -893244075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 752
+        width: 265
+        height: 257
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1dd75536750e94c8a4ab7a3031bf21
+      internalID: -1594562386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_28
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 752
+        width: 266
+        height: 257
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a5bb0728784ee4996ecec88d453f6b
+      internalID: -1451966278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_29
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 750
+        width: 266
+        height: 264
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acb7ccde02b877459af2310718dd13e
+      internalID: 1781864038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_30
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1008
+        width: 4
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66224cd7e953ed04abef5c68a00c2d7e
+      internalID: -557552184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_31
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 990
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02678859294ed964db8eec350d3e5ca1
+      internalID: -535012709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_32
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 741
+        width: 200
+        height: 232
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb0eed4dc0b796469aac2772ce903ca
+      internalID: -1534990183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_33
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 749
+        width: 220
+        height: 227
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12d77c9e79bb24468374e855bddc62d
+      internalID: 1399658870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_34
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 972
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafaad2a783a1144d87ad767cb234216
+      internalID: -79476746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_35
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 744
+        width: 220
+        height: 232
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2eac04757d70943b97d31478385de5
+      internalID: 865716206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_36
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 942
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72addfdd09d12ce439cde03271f77153
+      internalID: -1031371045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_37
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 828
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b780f5915992342b360ca0d1686b9f
+      internalID: 1234599676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_38
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 732
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a38300f9d1d354d89f1ff26b298747
+      internalID: 1261049556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_39
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 732
+        width: 12
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d08301a7c019244b6a9133e4f7db45
+      internalID: 601087553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_40
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 732
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ada45862e8d0943844cac0ddca536a
+      internalID: -1228905443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_41
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 732
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2d53e63823457409ab9c17d2ef902f
+      internalID: -54174478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_42
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 576
+        width: 939
+        height: 126
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27e4746659f8584a9e91f1e2f04985b
+      internalID: 113722973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_43
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 702
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a77eed577f28b4f9ec9eb1edd68b66
+      internalID: -1585820754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_44
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 478
+        width: 194
+        height: 231
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85ddab8de0820f4e9e8c005af82503e
+      internalID: 1343472503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_45
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 702
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b9af04b44153c4cbbeaa8823ae5ddb
+      internalID: -1668749468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_46
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 462
+        width: 236
+        height: 235
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806005b21ef2b11438307b622991cb38
+      internalID: 76878572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_47
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 654
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6b19a50f5ac3d4585e43a870a4861f
+      internalID: -784698109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_48
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 466
+        width: 232
+        height: 231
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cd999c1e2dd3b45b2b07c7f176babf
+      internalID: 425500296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 427
+        width: 942
+        height: 125
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35bee5b4bc55df43ab6d7402591bc12
+      internalID: -1835610834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_50
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 540
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f051a7ca794117b44b250c3d39a89cb9
+      internalID: 1748431139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_51
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 492
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78abc8c08adeea4da0a44b512ada3c3
+      internalID: 983886761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_52
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 492
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03af4e9018ee21e45ace1ff607f95067
+      internalID: 2113741640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_53
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 414
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d87f81de7ec164c8837495a306ee2f
+      internalID: 1925471141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_54
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 125
+        width: 806
+        height: 295
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 55, y: 40, z: 54, w: 28}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a8fe0b959ac9d4a80980666dce1dee
+      internalID: 372190951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_55
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 396
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41891edaadb3d64b8498f485be86b5d
+      internalID: 33867799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_56
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 277
+        width: 938
+        height: 125
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f09e15a293bac488b59140fd484b93
+      internalID: 1600327996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_57
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 126
+        width: 939
+        height: 126
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae65493427a650948a61291045f7678c
+      internalID: 1024965836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-buttons-ui-game_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 108
+        width: 6
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd094c241dc9794fa16c14badcfb4ea
+      internalID: -2092897483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b87e3e8971132384cb12126738219ac4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: True
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":394.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":1.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":1,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      wooden-buttons-ui-game_0: 1684622673
+      wooden-buttons-ui-game_1: -545260064
+      wooden-buttons-ui-game_10: -1931041952
+      wooden-buttons-ui-game_11: -1335553709
+      wooden-buttons-ui-game_12: -1837171489
+      wooden-buttons-ui-game_13: 6904366
+      wooden-buttons-ui-game_14: -711089701
+      wooden-buttons-ui-game_15: 2017356428
+      wooden-buttons-ui-game_16: 1911675187
+      wooden-buttons-ui-game_17: 1427234566
+      wooden-buttons-ui-game_18: 813561283
+      wooden-buttons-ui-game_19: -408024569
+      wooden-buttons-ui-game_2: -584030055
+      wooden-buttons-ui-game_20: -1766096539
+      wooden-buttons-ui-game_21: 734626998
+      wooden-buttons-ui-game_22: -238052476
+      wooden-buttons-ui-game_23: -71082734
+      wooden-buttons-ui-game_24: -1151543733
+      wooden-buttons-ui-game_25: 971784808
+      wooden-buttons-ui-game_26: -893244075
+      wooden-buttons-ui-game_27: -1594562386
+      wooden-buttons-ui-game_28: -1451966278
+      wooden-buttons-ui-game_29: 1781864038
+      wooden-buttons-ui-game_3: -177017149
+      wooden-buttons-ui-game_30: -557552184
+      wooden-buttons-ui-game_31: -535012709
+      wooden-buttons-ui-game_32: -1534990183
+      wooden-buttons-ui-game_33: 1399658870
+      wooden-buttons-ui-game_34: -79476746
+      wooden-buttons-ui-game_35: 865716206
+      wooden-buttons-ui-game_36: -1031371045
+      wooden-buttons-ui-game_37: 1234599676
+      wooden-buttons-ui-game_38: 1261049556
+      wooden-buttons-ui-game_39: 601087553
+      wooden-buttons-ui-game_4: 576592472
+      wooden-buttons-ui-game_40: -1228905443
+      wooden-buttons-ui-game_41: -54174478
+      wooden-buttons-ui-game_42: 113722973
+      wooden-buttons-ui-game_43: -1585820754
+      wooden-buttons-ui-game_44: 1343472503
+      wooden-buttons-ui-game_45: -1668749468
+      wooden-buttons-ui-game_46: 76878572
+      wooden-buttons-ui-game_47: -784698109
+      wooden-buttons-ui-game_48: 425500296
+      wooden-buttons-ui-game_49: -1835610834
+      wooden-buttons-ui-game_5: 2114656819
+      wooden-buttons-ui-game_50: 1748431139
+      wooden-buttons-ui-game_51: 983886761
+      wooden-buttons-ui-game_52: 2113741640
+      wooden-buttons-ui-game_53: 1925471141
+      wooden-buttons-ui-game_54: 372190951
+      wooden-buttons-ui-game_55: 33867799
+      wooden-buttons-ui-game_56: 1600327996
+      wooden-buttons-ui-game_57: 1024965836
+      wooden-buttons-ui-game_58: -2092897483
+      wooden-buttons-ui-game_6: 1231357110
+      wooden-buttons-ui-game_7: -995283304
+      wooden-buttons-ui-game_8: -794673503
+      wooden-buttons-ui-game_9: 1666879496
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
