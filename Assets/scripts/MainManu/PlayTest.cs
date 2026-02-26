@@ -1,14 +1,20 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayTest : MonoBehaviour
 {
-    [SerializeField] private GameObject g;
-    
+    [SerializeField] private GameObject loadingIcon;
+
     public void OnClick()
     {
-        g.SetActive(true);
+        StartCoroutine(Load());
+    }
+
+    IEnumerator Load()
+    {
+        loadingIcon.SetActive(true);
+        yield return null;
         SceneManager.LoadScene("1");
     }
-    
 }
