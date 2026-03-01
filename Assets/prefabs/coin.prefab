@@ -42,11 +42,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9024088706857818824}
-  - component: {fileID: 7602158020243577623}
   - component: {fileID: 2172583685479465423}
   - component: {fileID: 749862834954315775}
   - component: {fileID: 2972026696846372889}
   - component: {fileID: 162516010170320667}
+  - component: {fileID: 6777755674523586523}
   m_Layer: 0
   m_Name: bitcoin
   m_TagString: Untagged
@@ -69,18 +69,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8915849851276395115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7602158020243577623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039725074031247265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7e6fb5fe8747c14ba64179ebf9ccaf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coin
 --- !u!33 &2172583685479465423
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -181,6 +169,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.28
   m_Center: {x: -0.000000014901161, y: 0, z: 0}
+--- !u!114 &6777755674523586523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039725074031247265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e6fb5fe8747c14ba64179ebf9ccaf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coin
+  _pointLight: {fileID: 2740002893835485806}
 --- !u!1 &2301804510994177374
 GameObject:
   m_ObjectHideFlags: 0
