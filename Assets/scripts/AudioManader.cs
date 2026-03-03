@@ -1,11 +1,13 @@
+using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AudioManader : MonoBehaviour
 {
     public static AudioManader Instance;
-    public AudioSource[] allAudioSource;
 
     public AudioSource audioSource;
+    public AudioSource backgroundAudioSource;
     
     public AudioClip coinSound;
     public AudioClip bombSound;
@@ -13,25 +15,14 @@ public class AudioManader : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-
-        audioSource = GetComponent<AudioSource>();
-        allAudioSource = FindObjectsOfType<AudioSource>();
-        
-        float savedVolume = PlayerPrefs.GetFloat("Volume", 1f);
-        SetVolume(savedVolume);
-        
-        Debug.Log("Saved volume: " + savedVolume);
     }
 
-    public void SetVolume(float volume)
+    private void Start()
     {
-        foreach (var audio in allAudioSource)
+        if (backgroundAudioSource != null)
         {
-            audio.volume = volume;
+            backgroundAudioSource.Play();
         }
-        
-        PlayerPrefs.SetFloat("Volume", volume);
-        PlayerPrefs.Save();
     }
 
     public void PlaySound(Soundtype type)

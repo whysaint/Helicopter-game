@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d5d8c4a696cdff4997b623ac942d244
+guid: f9758c30bc64ace4a979fe47f182d093
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: helicopter 2_0
+      name: capture_260226_115506_clean_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 58
+        y: 52
         width: 400
-        height: 389
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,8 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 928fbf0445b84e04e9c6b23a63800cdd
-      internalID: -1163637247
+      spriteID: e55352c7775629a46ab4b4f0d6cfaafa
+      internalID: -2058153278
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e3cee10970838d442baaf2f02136d1cd
+    spriteID: 3b5208b76c967fd4ab48a1b5d19c75f0
     internalID: 0
     vertices: []
     indices: 
@@ -158,9 +158,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
     nameFileIdTable:
-      helicopter 2_0: -1163637247
+      capture_260226_115506_clean_0: -2058153278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
