@@ -2,21 +2,29 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    [SerializeField] public ParticleSystem explosionEffect;
+    [SerializeField] private ParticleSystem explosionEffect;
     
-    void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.transform.root.CompareTag("Player"))
+        if (other.transform.root.CompareTag(GameTags.Player))
         {
-            ParticleSystem effect = Instantiate(explosionEffect, transform.position, Quaternion.identity);
-
-            if (effect != null)
+            if (explosionEffect != null)
             {
+                ParticleSystem effect = Instantiate(explosionEffect, transform.position, Quaternion.identity);
                 effect.Play();
+                Destroy(effect.gameObject, effect.main.duration);
             }
-            Destroy(effect.gameObject, effect.main.duration);
             
-            AudioManader.Instance.PlaySound(Soundtype.BombExplosion);
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySound(SoundType.BombExplosion);
+            }
+
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.OnLose();
+            }
+
             Destroy(gameObject);
         }
     }

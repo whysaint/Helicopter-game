@@ -1,18 +1,14 @@
-using System;
-using Unity.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class LevelSpawner : MonoBehaviour
 {
-    [SerializeField] public GameObject coinPrefab;
-    [SerializeField] public GameObject bombPrefab;
-
-    [SerializeField] public Vector3 minVectorBounse;
-    [SerializeField] public Vector3 maxVertorBounse;
-
-    [SerializeField] public int coinCount;
-    [SerializeField] public int bombCount;
+    [SerializeField] private GameObject coinPrefab;
+    [SerializeField] private GameObject bombPrefab;
+    [SerializeField] private Vector3 minSpawnBounds;
+    [SerializeField] private Vector3 maxSpawnBounds;
+    [SerializeField] private int coinCount;
+    [SerializeField] private int bombCount;
 
     [SerializeField] private float radius = 0.75f;
     
@@ -21,12 +17,18 @@ public class LevelSpawner : MonoBehaviour
 
     private void Start()
     {
+        int totalCoins = coinCount;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.SetTotalCoins(totalCoins);
+        }
+
         SpawnObjects(coinPrefab, coinCount);
         SpawnObjects(bombPrefab, bombCount);
         OnSecretCoin();
     }
 
-    void SpawnObjects(GameObject prefab ,int value)
+    private void SpawnObjects(GameObject prefab, int value)
     {
         if (prefab == null) return;
         if (secretCoin) value = value -1;
@@ -49,21 +51,17 @@ public class LevelSpawner : MonoBehaviour
         }
     }
 
-    void OnSecretCoin()
+    private void OnSecretCoin()
     {
-        if (secretCoin)
+        if (secretCoin && coinPrefab != null)
         {
             Instantiate(coinPrefab, secretCoinLocation, Quaternion.identity);
         }
-        else
-        {
-            Debug.Log("OnSecretCoin is off - (false)");
-        }
     }
     
-    Vector3 GetRandomVector()
+    private Vector3 GetRandomVector()
     {
-        Vector3 pos = new Vector3(Random.Range(minVectorBounse.x, maxVertorBounse.x), Random.Range(minVectorBounse.y, maxVertorBounse.y), 0);
+        Vector3 pos = new Vector3(Random.Range(minSpawnBounds.x, maxSpawnBounds.x), Random.Range(minSpawnBounds.y, maxSpawnBounds.y), 0);
         return pos;
     }
 }

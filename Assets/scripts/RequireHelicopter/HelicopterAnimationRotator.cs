@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class HelicopterAnimationRator : MonoBehaviour
 {
     [SerializeField] private Animator rotorAnimator;
@@ -25,9 +24,6 @@ public class HelicopterAnimationRator : MonoBehaviour
         
         float magnitude = _helicopterMover.GetMagnitude();
         float animSpeed = Mathf.Lerp(minSpeed, maxSpeed, Mathf.Clamp01(magnitude));
-        
-        Debug.Log(animSpeed);
-        
         rotorAnimator.SetFloat("speed", animSpeed);
     }
 }

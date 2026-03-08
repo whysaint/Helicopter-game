@@ -2,18 +2,20 @@ using UnityEngine;
 
 public class HelicopterMover : MonoBehaviour
 {
-    public float speedMove = 10f;
-    public float speedRotate = 5f;
-    public float stabilityForce = 3.5f;
-    public Rigidbody _rb;
+    [SerializeField] private float speedMove = 10f;
+    [SerializeField] private float speedRotate = 5f;
+    [SerializeField] private float stabilityForce = 3.5f;
+    private Rigidbody _rb;
 
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
+        if (InputManager.Instance == null || _rb == null) return;
+        
         float vertical = InputManager.Instance.Vertical;
         float horizontal = InputManager.Instance.Horizontal;
         
@@ -24,9 +26,9 @@ public class HelicopterMover : MonoBehaviour
 
     void Stabilize()
     {
-        Vector3 currutUp = transform.up;
-        Vector3 factUp = Vector3.up;
-        Vector3 finalUp = Vector3.Cross(currutUp, factUp);
+        Vector3 currentUp = transform.up;
+        Vector3 worldUp = Vector3.up;
+        Vector3 finalUp = Vector3.Cross(currentUp, worldUp);
         _rb.AddTorque(finalUp * stabilityForce);
     }
 

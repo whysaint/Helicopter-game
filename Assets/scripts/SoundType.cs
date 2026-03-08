@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum Soundtype
+public enum SoundType
 {
     Helicopter,
     HelicopterExplosion,

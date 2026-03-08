@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class HelicopterAudio : MonoBehaviour
 {
-    [Header("Audio Settings")] 
-    [SerializeField] public AudioSource rotorAudioSource;
-    [SerializeField] public float minPitch;
-    [SerializeField] public float maxPitch;
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource rotorAudioSource;
+    [SerializeField] private float minPitch;
+    [SerializeField] private float maxPitch;
     [SerializeField] private float startOffset = 0.1f;
 
     private HelicopterMover _helicopterMover;
@@ -45,17 +45,9 @@ public class HelicopterAudio : MonoBehaviour
         SetPitchInAudio();
     }
 
-    void SetPitchInAudio()
+    private void SetPitchInAudio()
     {
         float magnitude = _helicopterMover.GetMagnitude();
-
-        /*if (rotorAudioSource != )
-        {
-            
-        }
-        
-        rotorAudioSource.time = startOffset;*/
-        
         rotorAudioSource.pitch = Mathf.Lerp(minPitch, maxPitch, magnitude);
     }
 }

@@ -14190,12 +14190,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelSpawner
   coinPrefab: {fileID: 1712037013081740007, guid: c708e70a04afc564090176219a47d7ee, type: 3}
   bombPrefab: {fileID: 5227116841980999465, guid: db561fb8f65e80a4abea2560dc973792, type: 3}
-  minVectorBounse: {x: -47, y: 23, z: 0}
-  maxVertorBounse: {x: 47, y: -3, z: 0}
+  minSpawnBounds: {x: -48, y: -3.5, z: 0}
+  maxSpawnBounds: {x: 40, y: 22, z: 0}
   coinCount: 50
   bombCount: 20
   radius: 1
-  secretCoin: 1
+  secretCoin: 0
   secretCoinLocation: {x: -51.4, y: 21.3, z: 0}
 --- !u!1 &340282009
 GameObject:
@@ -32398,7 +32398,6 @@ MonoBehaviour:
   speedMove: 16
   speedRotate: 1.5
   stabilityForce: 4.04
-  _rb: {fileID: 0}
 --- !u!54 &846487873
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57078,9 +57077,9 @@ MonoBehaviour:
   target: {fileID: 846487867}
   cameraPosition: {x: 0, y: 1, z: -12}
   cameraSpeed: 3
-  maxWolrdGranzaY: 15
-  minWorldGranzaY: -3
-  AllHelicopters:
+  maxWorldBoundY: 0
+  minWorldBoundY: 0
+  allHelicopters:
   - {fileID: 846487867}
   - {fileID: 1643406987}
   - {fileID: 1874795644}
@@ -58334,7 +58333,6 @@ MonoBehaviour:
   speedMove: 15
   speedRotate: 2.4
   stabilityForce: 4.5
-  _rb: {fileID: 0}
 --- !u!114 &1561922410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62838,7 +62836,6 @@ MonoBehaviour:
   speedMove: 15
   speedRotate: 1.5
   stabilityForce: 6
-  _rb: {fileID: 0}
 --- !u!114 &1643406985
 MonoBehaviour:
   m_ObjectHideFlags: 0

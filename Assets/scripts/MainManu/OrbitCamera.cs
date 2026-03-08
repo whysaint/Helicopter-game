@@ -5,20 +5,20 @@ public class OrbitCamera : MonoBehaviour
     [SerializeField] private Transform target;
 
     [Header("Input")]
-    public float touchSensitivity = 0.18f;
+    [SerializeField] private float touchSensitivity = 0.18f;
 
     [Header("Horizontal Limits")]
-    public float minRotY = -60f;
-    public float maxRotY = 60f;
-    public bool useRotationLimits = true;
+    [SerializeField] private float minRotY = -60f;
+    [SerializeField] private float maxRotY = 60f;
+    [SerializeField] private bool useRotationLimits = true;
 
     [Header("Inertia")]
-    public float inertiaDecay = 5f;
-    public float inertiaScale = 0.4f;
+    [SerializeField] private float inertiaDecay = 5f;
+    [SerializeField] private float inertiaScale = 0.4f;
 
     [Header("Camera Animation")]
-    public bool autoRotate = true;
-    public float autoRotateSpeed = 1f;
+    [SerializeField] private bool autoRotate = true;
+    [SerializeField] private float autoRotateSpeed = 1f;
 
     private float _rotY;
     private float _velocity;

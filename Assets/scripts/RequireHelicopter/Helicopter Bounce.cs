@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class HelicopterBounce : MonoBehaviour
 {
-    public float bounceForce;
+    [SerializeField] private float bounceForce;
     private Rigidbody _rb;
 
-    void Start()
+    private void Start()
     {
         _rb = GetComponent<Rigidbody>();
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Bomb"))
-        {
-            Vector3 firstContact = collision.contacts[0].point;
-            Vector3 bounceDerection = (transform.position - firstContact).normalized;
-            _rb.linearVelocity = bounceDerection * bounceForce;
-        }
-
+        if (!collision.gameObject.CompareTag(GameTags.Bomb)) return;
+        if (_rb == null) return;
+        if (collision.contactCount == 0) return;
+        
+        Vector3 firstContact = collision.contacts[0].point;
+        Vector3 bounceDirection = (transform.position - firstContact).normalized;
+        _rb.linearVelocity = bounceDirection * bounceForce;
     }
 }

@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
-    // UI кнопки вызывают методы InputManager
     public void VerticalPlus()
     {
         InputManager.Instance.SetVerticalUI(1f);
