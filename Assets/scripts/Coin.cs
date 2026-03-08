@@ -1,9 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// Монета, собираемая игроком. Увеличивает счёт и вызывает победу при сборе всех.
-/// ИСПРАВЛЕНО: убран Debug.LogWarning, добавлены null-проверки для Singleton.
-/// </summary>
 public class Coin : MonoBehaviour
 {
     public static int coinCount = 0;
@@ -21,9 +17,6 @@ public class Coin : MonoBehaviour
                 _pointLight.enabled = false;
             }
             
-            // ДОБАВЛЕНО: проверка Instance != null
-            // ПОЧЕМУ: Singleton может быть ещё не создан (порядок Awake) или уничтожен. Без проверки — NullReferenceException.
-            // КАК ИЗБЕЖАТЬ: При обращении к Singleton всегда проверяй: if (XxxManager.Instance != null) XxxManager.Instance.DoThing();
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlaySound(SoundType.Coin);

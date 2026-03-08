@@ -1,7 +1,13 @@
 using UnityEngine;
 
-public class FpsController : MonoBehaviour
+public class FrameRateManager : MonoBehaviour
 {
+    void Awake()
+    {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
+    }
+    
     float deltaTime = 0.0f;
 
     void Update()

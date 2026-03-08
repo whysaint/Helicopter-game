@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float cameraSpeed = 3f;
     [SerializeField] private float maxWorldBoundY;
     [SerializeField] private float minWorldBoundY;
-    [FormerlySerializedAs("AllHelicopters")] [SerializeField] private List<Transform> allHelicopters = new List<Transform>();
+    [SerializeField] private List<Transform> allHelicopters = new List<Transform>();
 
     private void Start()
     {
