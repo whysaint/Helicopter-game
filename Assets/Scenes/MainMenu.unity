@@ -1636,7 +1636,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2752,7 +2752,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3038,7 +3038,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3257,7 +3257,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3363,7 +3363,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4183,7 +4183,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4365,7 +4365,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4510,7 +4510,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4830,7 +4830,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5514,7 +5514,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6110,7 +6110,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6260,7 +6260,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6408,7 +6408,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 437129643}
         m_TargetAssemblyTypeName: IUManager, Assembly-CSharp
-        m_MethodName: clickButtonSound
+        m_MethodName: OnClickButtonSoundPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

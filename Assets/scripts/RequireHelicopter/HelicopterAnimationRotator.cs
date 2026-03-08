@@ -1,6 +1,10 @@
 using UnityEngine;
 
-public class HelicopterAnimationRator : MonoBehaviour
+/// <summary>
+/// Анимирует скорость ротора в зависимости от скорости вертолёта.
+/// ИСПРАВЛЕНО: убран Debug.Log(animSpeed) из Update — он вызывался каждый кадр и засорял консоль.
+/// </summary>
+public class HelicopterAnimationRotator : MonoBehaviour
 {
     [SerializeField] private Animator rotorAnimator;
     [SerializeField] private float minSpeed = 0.5f; 

@@ -23,11 +23,11 @@ public class ScoreUI : MonoBehaviour
         string scoreString = score.ToString();
         if (scoreText != null)
         {
-            scoreText.text = "Coins: " + scoreString;
+            scoreText.text = scoreString;
         }
         if (scoreTextTMP != null)
         {
-            scoreTextTMP.text = "Coins: " + scoreString;
+            scoreTextTMP.text = scoreString;
         }
     }
 }

@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class FPScontroller : MonoBehaviour
+public class FpsController : MonoBehaviour
 {
-    private float deltaTime = 0.0f;
+    float deltaTime = 0.0f;
 
-    private void Update()
+    void Update()
     {
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
     }
 
-    private void OnGUI()
+    void OnGUI()
     {
         int w = Screen.width, h = Screen.height;
 
