@@ -36,14 +36,6 @@ public class UIManager : MonoBehaviour
         if (garageButton != null) garageButton.SetActive(false);
     }
 
-    public void OnClickButtonSoundPlay()
-    {
-        if (onClickButtonSound != null)
-        {
-            onClickButtonSound.Play();
-        }
-    }
-
     private IEnumerator Load()
     {
         if (loadingIcon != null) loadingIcon.SetActive(true);
