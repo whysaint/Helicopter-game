@@ -5,7 +5,7 @@ public class FrameRateManager : MonoBehaviour
     void Awake()
     {
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 120;
     }
     
     float deltaTime = 0.0f;

@@ -58,6 +58,12 @@ public class LevelSpawner : MonoBehaviour
             Instantiate(coinPrefab, secretCoinLocation, Quaternion.identity);
         }
     }
+
+    public int GetBombCoint(int value)
+    {
+        value = 50;
+        return value;
+    }
     
     private Vector3 GetRandomVector()
     {
