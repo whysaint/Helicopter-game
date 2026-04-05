@@ -11,7 +11,7 @@ public class Coin : MonoBehaviour
         if (other.transform.root.CompareTag(GameTags.Player))
         {
             coinCount++;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             if (_pointLight != null)
             {
                 _pointLight.enabled = false;

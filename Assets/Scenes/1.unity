@@ -14313,8 +14313,8 @@ MonoBehaviour:
   bombPrefab: {fileID: 5227116841980999465, guid: db561fb8f65e80a4abea2560dc973792, type: 3}
   minSpawnBounds: {x: -48, y: -3.5, z: 0}
   maxSpawnBounds: {x: 48, y: 22, z: 0}
-  coinCount: 50
-  bombCount: 20
+  coinCount: 0
+  bombCount: 100
   radius: 1
   secretCoin: 1
   secretCoinLocation: {x: -51.4, y: 21.3, z: 0}

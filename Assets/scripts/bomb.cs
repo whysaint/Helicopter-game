@@ -6,7 +6,10 @@ public class Bomb : MonoBehaviour
     {
         if (other.transform.root.CompareTag(GameTags.Player))
         {
-            ExplosionPool.Instance.PlayExplosion(transform.position);
+            if (ExplosionPool.Instance != null)
+            {
+                ExplosionPool.Instance.PlayExplosion(transform.position);
+            }
 
             if (AudioManager.Instance != null)
                 AudioManager.Instance.PlaySound(SoundType.BombExplosion);
