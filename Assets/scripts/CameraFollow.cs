@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -9,18 +7,21 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float cameraSpeed = 3f;
     [SerializeField] private float maxWorldBoundY;
     [SerializeField] private float minWorldBoundY;
-    [SerializeField] private List<Transform> allHelicopters = new List<Transform>();
 
-    private void Start()
+    private void OnEnable()
     {
-        GetTarget();
+        HelicopterEvents.OnActiveHelicopterChanged += SetTarget;
+    }
+
+    private void OnDisable()
+    {
+        HelicopterEvents.OnActiveHelicopterChanged -= SetTarget;
     }
 
     private void LateUpdate()
     {
         if (target == null)
         {
-            GetTarget();
             return;
         }
         
@@ -34,25 +35,18 @@ public class CameraFollow : MonoBehaviour
         Vector3 finalPosition = Vector3.Lerp(transform.position, targetPosition, cameraSpeed * Time.deltaTime);
         transform.position = finalPosition;
 
-        Vector3 lookAtTarget  = target.position;
-        if (lookAtTarget .y > maxWorldBoundY)
+        Vector3 lookAtTarget = target.position;
+        if (lookAtTarget.y > maxWorldBoundY)
         {
-            lookAtTarget .y = target.position.y;
+            lookAtTarget.y = target.position.y;
         }
 
-        transform.LookAt(lookAtTarget  + Vector3.forward * 10f);
+        transform.LookAt(lookAtTarget + Vector3.forward * 10f);
     }
 
-    private void GetTarget()
+    private void SetTarget(Transform newTarget)
     {
-        for (int i = 0; i < allHelicopters.Count; i++)
-        {
-            if (allHelicopters[i].gameObject.activeSelf)
-            {
-                target = allHelicopters[i].gameObject.transform;
-                return;
-            }
-        }
+        target = newTarget;
     }
 }
 
