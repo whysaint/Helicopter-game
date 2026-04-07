@@ -1,8 +1,13 @@
 using UnityEngine;
 
-public class HelicopterSpawner : MonoBehaviour
+public static class HelicopterRuntimeState
 {
-    public GameObject[] helicopters; // те же вертолёты что и в меню
+    public static Transform ActiveHelicopter;
+}
+
+public class HelicpterSpawner : MonoBehaviour
+{
+    public GameObject[] helicopters;
 
     private void Start()
     {
@@ -11,17 +16,15 @@ public class HelicopterSpawner : MonoBehaviour
             return;
         }
 
-        // выключаем все
         for (int i = 0; i < helicopters.Length; i++)
         {
             helicopters[i].SetActive(false);
         }
 
-        // читаем сохранённый выбор и включаем нужный
         int selected = Mathf.Clamp(HelicopterSelectionService.GetSelectedIndex(), 0, helicopters.Length - 1);
         helicopters[selected].SetActive(true);
 
-        // Сообщаем всем подписчикам (например, камере) новую активную цель.
-        HelicopterEvents.OnActiveHelicopterChanged?.Invoke(helicopters[selected].transform);
+        HelicopterRuntimeState.ActiveHelicopter = helicopters[selected].transform;
+        HelicopterEvents.OnActiveHelicopterChanged?.Invoke(HelicopterRuntimeState.ActiveHelicopter);
     }
 }

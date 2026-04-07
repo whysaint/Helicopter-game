@@ -14313,8 +14313,8 @@ MonoBehaviour:
   bombPrefab: {fileID: 5227116841980999465, guid: db561fb8f65e80a4abea2560dc973792, type: 3}
   minSpawnBounds: {x: -48, y: -3.5, z: 0}
   maxSpawnBounds: {x: 48, y: 22, z: 0}
-  coinCount: 0
-  bombCount: 100
+  coinCount: 50
+  bombCount: 20
   radius: 1
   secretCoin: 1
   secretCoinLocation: {x: -51.4, y: 21.3, z: 0}
@@ -26629,6 +26629,54 @@ Transform:
   - {fileID: 1770030513}
   m_Father: {fileID: 231087165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &708310622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 708310624}
+  - component: {fileID: 708310625}
+  m_Layer: 0
+  m_Name: HelicopterSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &708310624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708310622}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.15015, y: -4.00925, z: -64.39092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &708310625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708310622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8ee9ca6436d48a2a2fde4c3bcce4c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicpterSpawner
+  helicopters:
+  - {fileID: 846487866}
+  - {fileID: 1643406974}
+  - {fileID: 1561922405}
 --- !u!1 &708590117
 GameObject:
   m_ObjectHideFlags: 0
@@ -57554,10 +57602,6 @@ MonoBehaviour:
   cameraSpeed: 3
   maxWorldBoundY: 18
   minWorldBoundY: -3
-  allHelicopters:
-  - {fileID: 846487867}
-  - {fileID: 1643406987}
-  - {fileID: 1874795644}
 --- !u!1 &1517158291
 GameObject:
   m_ObjectHideFlags: 0
@@ -58727,6 +58771,55 @@ Transform:
   - {fileID: 1041409129}
   m_Father: {fileID: 231087165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1561304521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1561304523}
+  - component: {fileID: 1561304522}
+  m_Layer: 0
+  m_Name: SelecterCharter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1561304522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561304521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e2b6e9cb32c0240baa7364bb7f8354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelecterCharter
+  helicopters:
+  - {fileID: 846487866}
+  - {fileID: 1643406974}
+  - {fileID: 1561922405}
+  number: 0
+--- !u!4 &1561304523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561304521}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.15015, y: -4.00925, z: -64.39092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1561922405
 GameObject:
   m_ObjectHideFlags: 0
@@ -58759,7 +58852,7 @@ Transform:
   m_GameObject: {fileID: 1561922405}
   serializedVersion: 2
   m_LocalRotation: {x: 6.280374e-16, y: -0.70710677, z: 1.1483213e-15, w: 0.70710695}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -63351,11 +63444,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 56
   m_CollisionDetection: 0
---- !u!4 &1643406987 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 267908039346505262, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
-  m_PrefabInstance: {fileID: 2145450721426483128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1643406991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126462,7 +126550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647423634994371732, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 788709578052759343, guid: a3a08689bcc8e0a47bee2fd925aa6b6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -128461,3 +128549,5 @@ SceneRoots:
   - {fileID: 912886965}
   - {fileID: 394013947}
   - {fileID: 129024486}
+  - {fileID: 1561304523}
+  - {fileID: 708310624}
